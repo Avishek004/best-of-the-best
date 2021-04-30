@@ -9,6 +9,6 @@ Key Features :
 
 Technologies Used In :-
 ```
-Library/Framework:- React, JavaScript(ES6), Bootstrap, CSS, HTML.
+Library/Framework :- React, JavaScript(ES6), Bootstrap, CSS, HTML.
 Deploy & Hosting :- Netlify.
 ```
