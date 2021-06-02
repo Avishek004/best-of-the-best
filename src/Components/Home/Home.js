@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from 'react';
+import { Container } from 'react-bootstrap';
 import Body from '../Body/Body';
 import Header from '../Header/Header';
+import './Home.css';
 
 const Home = () => {
     const [teams, setTeams] = useState([]);
@@ -11,12 +13,16 @@ const Home = () => {
             .then(data => setTeams(data.teams))
     }, [])
     return (
-        <div>
+        <main>
             <Header></Header>
-            {
-                teams.map(team => <Body team={team}></Body>)
-            }
-        </div>
+            <Container>
+                <div className="row py-5">
+                    {
+                        teams.map(team => <Body team={team}></Body>)
+                    }
+                </div>
+            </Container>
+        </main>
     );
 };
 

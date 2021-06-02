@@ -14,13 +14,13 @@ const Body = (props) => {
         history.push(url);
     }
     return (
-        <div style={{ float: 'left', width: '500px'}}>
-            <Card className="card">
-                <Card.Img variant="Center" src={strTeamBadge} style={{ width: '200px', height: '200px' }} />
+        <div className="col-md-3 col-sm-6 col-12 text-center pb-3">
+            <Card>
+                <Card.Img variant="top" src={strTeamBadge} style={{ height: '200px' }} />
                 <Card.Body>
                     <Card.Title>{strTeam}</Card.Title>
                     <Card.Text>{strLeague}</Card.Text>
-                    <Button onClick={() => handleClick(idTeam)}>Explore<FontAwesomeIcon icon={faArrowRight} /></Button>
+                    <Button variant="primary" onClick={() => handleClick(idTeam)}>Explore<FontAwesomeIcon icon={faArrowRight} /></Button>
                 </Card.Body>
             </Card>
         </div>

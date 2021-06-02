@@ -18,7 +18,7 @@ const TeamDetail = () => {
             .then(data => setTeam(data.teams[0]))
     }, [teamId]);
     return (
-        <div>
+        <section>
             <div className="header">
                 <img src={strTeamBanner} alt="" className="banner" />
                 <img src={strTeamLogo} alt="" className="center" />
@@ -43,7 +43,7 @@ const TeamDetail = () => {
                 <a href={strFacebook}><img src={facebook} alt=""></img></a>
                 <a href={strYoutube}><img src={Youtube} alt=""></img></a>
             </div>
-        </div>
+        </section>
     );
 };
 
